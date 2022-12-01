@@ -272,14 +272,14 @@ function stopBloc() {
 
 document.addEventListener('keydown', function(e) {
 	//left
-	if (e.which === 37 && newBloc[0][0] > 0 && leftTime < time && !isWall(-1)) {
+	if (e.which === 65 && newBloc[0][0] > 0 && leftTime < time && !isWall(-1)) {
 		for(var i = 0; i < newBloc.length; i++) {
 			newBloc[i][0] -= 1;
 		}
 		leftTime = time;
 	}
 	//up
-	if (e.which === 38 && rotateTime < time) {
+	if (e.which === 87 && rotateTime < time) {
 		for(var i = 0; i < 3; i++) {
 			var xOffset = newBloc[0][0];
 			var yOffset = newBloc[0][1];
@@ -296,14 +296,14 @@ document.addEventListener('keydown', function(e) {
 		}
 	}
 	//right
-	if (e.which === 39 && newBloc[0][0] < (canvas.width - grid) / grid && rightTime < time && !isWall(1)) {
+	if (e.which === 68 && newBloc[0][0] < (canvas.width - grid) / grid && rightTime < time && !isWall(1)) {
 		for(var i = 0; i < newBloc.length; i++) {
 			newBloc[i][0] += 1;
 		}
 		rightTime = time;
 	}
 	//down
-	if (e.which === 40) {
+	if (e.which === 83) {
 		isDashing = true;
 	}
 	//space
