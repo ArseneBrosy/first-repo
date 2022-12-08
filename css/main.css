@@ -1,8 +1,14 @@
 body {
-    background: black;
-    color: white;
+    background: #3d405b;
+    color: #F4F1DE;
 }
 
 h1 {
-    color: yellow;
+    color: #F2CC8F;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+p {
+    font-family: Roboto;
 }
